@@ -1,0 +1,36 @@
+﻿<Window x:Class="FalconCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FalconCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontSize="40" FontFamily="Segoe UI" FontWeight="DemiBold">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.ColumnSpan="4" BorderThickness="5" Name="TopDisplay" IsReadOnly="True" Padding="12,10,10,10"/>
+        <Button Grid.Column="0" Grid.Row="3" Name="Key_1" Click="NumberKeyClick" >1</Button>
+        <Button Grid.Column="1" Grid.Row="3" Name="Key_2" Click="NumberKeyClick" >2</Button>
+        <Button Grid.Column="2" Grid.Row="3" Name="Key_3" Click="NumberKeyClick" >3</Button>
+        <Button Grid.Column="0" Grid.Row="2" Name="Key_4" Click="NumberKeyClick" >4</Button>
+        <Button Grid.Column="1" Grid.Row="2" Name="Key_5" Click="NumberKeyClick" >5</Button>
+        <Button Grid.Column="2" Grid.Row="2" Name="Key_6" Click="NumberKeyClick" >6</Button>
+        <Button Grid.Column="0" Grid.Row="1" Name="Key_7" Click="NumberKeyClick" >7</Button>
+        <Button Grid.Column="1" Grid.Row="1" Name="Key_8" Click="NumberKeyClick" >8</Button>
+        <Button Grid.Column="2" Grid.Row="1" Name="Key_9" Click="NumberKeyClick" >9</Button>
+        <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Name="Key_0"  Click="NumberKeyClick" >0</Button>
+
+    </Grid>
+</Window>
