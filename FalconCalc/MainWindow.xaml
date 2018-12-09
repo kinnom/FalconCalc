@@ -13,6 +13,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -30,9 +31,16 @@
         <Button Grid.Column="0" Grid.Row="1" Name="Key_7" Click="NumberKeyClick" >7</Button>
         <Button Grid.Column="1" Grid.Row="1" Name="Key_8" Click="NumberKeyClick" >8</Button>
         <Button Grid.Column="2" Grid.Row="1" Name="Key_9" Click="NumberKeyClick" >9</Button>
-        <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Name="Key_0"  Click="NumberKeyClick">0</Button>
+        <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="1" Name="Key_0"  Click="NumberKeyClick">0</Button>
         <Button Grid.Column="3" Grid.Row="2" Name="Key_Minus" Click="NumberKeyClick">-</Button>
-        <Button Grid.Column="3" Grid.Row="3" Name="Key_Plus" Click="NumberKeyClick">+</Button>
-
+        <Button Grid.Column="3" Grid.Row="1" Name="Key_Plus" Click="NumberKeyClick">+</Button>
+        <Button Grid.Column="3" Grid.Row="3" Name="Key_Mult" Click="NumberKeyClick">x</Button>
+        <Button Grid.Column="3" Grid.Row="4" Name="Key_Div" Click="NumberKeyClick">/</Button>
+        <Button Grid.Column="0" Grid.Row="5" Name="Key_Dot" Click="NumberKeyClick">.</Button>
+        <Button Grid.Column="1" Grid.Row="4" Name="Key_Brac1" Click="NumberKeyClick">(</Button>
+        <Button Grid.Column="2" Grid.Row="4" Name="Key_Brac2" Click="NumberKeyClick">)</Button>
+        <Button Grid.Column="2" Grid.Row="5" Name="Key_Back" Click="SpecialKeyClick">Back</Button>
+        <Button Grid.Column="3" Grid.Row="5" Name="Key_Enter" Click="SpecialKeyClick">Enter</Button>
+        <Button Grid.Column="1" Grid.Row="5" Name="Key_Ans" Click="NumberKeyClick">Ans</Button>
     </Grid>
 </Window>

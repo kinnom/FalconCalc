@@ -31,5 +31,20 @@ namespace FalconCalc
             if (sender is Button button)
               TopDisplay.Text = TopDisplay.Text + (string)button.Content;
         }
+
+        private void SpecialKeyClick(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button)
+            {
+                if ((string)button.Content == "Back")
+                {
+                    if (TopDisplay.Text.EndsWith("Ans"))
+                        TopDisplay.Text = TopDisplay.Text.Remove(TopDisplay.Text.Length - 3);
+                    else
+                        if (TopDisplay.Text.Length != 0) TopDisplay.Text = TopDisplay.Text.Remove(TopDisplay.Text.Length - 1);
+                }
+
+            }
+        }
     }
 }
